@@ -9,8 +9,11 @@ importers:
   .:
     dependencies:
       '@xyflow/svelte':
-        specifier: ^0.1.30
-        version: 0.1.30(svelte@5.20.2)
+        specifier: 1.0.0-next.3
+        version: 1.0.0-next.3(svelte@5.20.2)
+      runed:
+        specifier: ^0.23.4
+        version: 0.23.4(svelte@5.20.2)
     devDependencies:
       '@eslint/compat':
         specifier: ^1.2.5
@@ -421,10 +424,10 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@svelte-put/shortcut@3.1.1':
-    resolution: {integrity: sha512-2L5EYTZXiaKvbEelVkg5znxqvfZGZai3m97+cAiUBhLZwXnGtviTDpHxOoZBsqz41szlfRMcamW/8o0+fbW3ZQ==}
+  '@svelte-put/shortcut@4.1.0':
+    resolution: {integrity: sha512-wImNEIkbxAIWFqlfuhcbC+jRPDeRa/uJGIXHMEVVD+jqL9xCwWNnkGQJ6Qb2XVszuRLHlb8SGZDL3Io/h3vs8w==}
     peerDependencies:
-      svelte: ^3.55.0 || ^4.0.0 || ^5.0.0
+      svelte: ^5.1.0
 
   '@sveltejs/adapter-auto@4.0.0':
     resolution: {integrity: sha512-kmuYSQdD2AwThymQF0haQhM8rE5rhutQXG4LNbnbShwhMO4qQGnKaaTy+88DuNSuoQDi58+thpq8XpHc1+oEKQ==}
@@ -607,13 +610,13 @@ packages:
     resolution: {integrity: sha512-EwVHlp5l+2vp8CoqJm9KikPZgi3gbdZAtabKT9KPShGeOcJhsv4Zdo3oc8T8I0uKEmYoU4ItyxbptjF08enaxg==}
     engines: {node: ^18.18.0 || ^20.9.0 || >=21.1.0}
 
-  '@xyflow/svelte@0.1.30':
-    resolution: {integrity: sha512-RlbXaIQyk9LJt9mWpSCFJccLu9/pVDJ4Rq7z7Rc4JFChiiSLMsSjYipT1laoXEkGC0vXMw8xNyCb07bQauy4Aw==}
+  '@xyflow/svelte@1.0.0-next.3':
+    resolution: {integrity: sha512-VHcFH6NTMVzpW1CPAe3l+wDjyZF152ehVbNbUFRbO2TVv7Ysvi2q0/6jHF9Re/4WNuvKqfhkQ/OWbCIcdSDKLA==}
     peerDependencies:
-      svelte: ^3.0.0 || ^4.0.0 || ^5.0.0
+      svelte: ^5.16.0
 
-  '@xyflow/system@0.0.51':
-    resolution: {integrity: sha512-cYnuM3oWQQjx2Rdz0LdZCnbUaWZdZDiik20kPDYsa5SIlq++ZDIcKiDF6a93ncfMv9Ej5GWfDkouE7bObrdRqQ==}
+  '@xyflow/system@0.0.50':
+    resolution: {integrity: sha512-HVUZd4LlY88XAaldFh2nwVxDOcdIBxGpQ5txzwfJPf+CAjj2BfYug1fHs2p4yS7YO8H6A3EFJQovBE8YuHkAdg==}
 
   acorn-jsx@5.3.2:
     resolution: {integrity: sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ==}
@@ -672,9 +675,6 @@ packages:
   chokidar@4.0.3:
     resolution: {integrity: sha512-Qgzu8kfBvo+cA4962jnP1KkS6Dop5NS6g7R5LFYJr4b8Ub94PPQXUksCw9PvXoeXPRRddRNC5C1JQUR2SMGtnA==}
     engines: {node: '>= 14.16.0'}
-
-  classcat@5.0.5:
-    resolution: {integrity: sha512-JhZUT7JFcQy/EzW605k/ktHtncoo9vnyW/2GspNYwFlN1C/WmjuV/xtS04e9SOkL2sTdw0VAZ2UGCcQ9lR6p6w==}
 
   clsx@2.1.1:
     resolution: {integrity: sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==}
@@ -1269,6 +1269,11 @@ packages:
   run-parallel@1.2.0:
     resolution: {integrity: sha512-5l4VyZR86LZ/lDxZTR6jqL8AFE2S0IFLMP26AbjsLVADxHdhB/c0GUsH+y39UfCi3dzz8OlQuPmnaJOMoDHQBA==}
 
+  runed@0.23.4:
+    resolution: {integrity: sha512-9q8oUiBYeXIDLWNK5DfCWlkL0EW3oGbk845VdKlPeia28l751VpfesaB/+7pI6rnbx1I6rqoZ2fZxptOJLxILA==}
+    peerDependencies:
+      svelte: ^5.7.0
+
   sade@1.8.1:
     resolution: {integrity: sha512-xal3CZX1Xlo/k4ApwCFrHVACi9fBqJ7V+mwhBsuf/1IOKbBy098Fex+Wa/5QMubw09pSZ/u8EY8PWgevJsXp1A==}
     engines: {node: '>=6'}
@@ -1670,7 +1675,7 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.34.8':
     optional: true
 
-  '@svelte-put/shortcut@3.1.1(svelte@5.20.2)':
+  '@svelte-put/shortcut@4.1.0(svelte@5.20.2)':
     dependencies:
       svelte: 5.20.2
 
@@ -1883,14 +1888,13 @@ snapshots:
       '@typescript-eslint/types': 8.24.1
       eslint-visitor-keys: 4.2.0
 
-  '@xyflow/svelte@0.1.30(svelte@5.20.2)':
+  '@xyflow/svelte@1.0.0-next.3(svelte@5.20.2)':
     dependencies:
-      '@svelte-put/shortcut': 3.1.1(svelte@5.20.2)
-      '@xyflow/system': 0.0.51
-      classcat: 5.0.5
+      '@svelte-put/shortcut': 4.1.0(svelte@5.20.2)
+      '@xyflow/system': 0.0.50
       svelte: 5.20.2
 
-  '@xyflow/system@0.0.51':
+  '@xyflow/system@0.0.50':
     dependencies:
       '@types/d3-drag': 3.0.7
       '@types/d3-selection': 3.0.11
@@ -1952,8 +1956,6 @@ snapshots:
   chokidar@4.0.3:
     dependencies:
       readdirp: 4.1.2
-
-  classcat@5.0.5: {}
 
   clsx@2.1.1: {}
 
@@ -2474,6 +2476,11 @@ snapshots:
   run-parallel@1.2.0:
     dependencies:
       queue-microtask: 1.2.3
+
+  runed@0.23.4(svelte@5.20.2):
+    dependencies:
+      esm-env: 1.2.2
+      svelte: 5.20.2
 
   sade@1.8.1:
     dependencies:
